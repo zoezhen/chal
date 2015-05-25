@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="574" inline="true" x="58" y="-223">
+  <block type="variables_set" id="574" inline="true" x="93" y="-99">
     <field name="VAR">bob</field>
     <value name="VALUE">
       <block type="math_number" id="577">
@@ -8,7 +8,22 @@
     </value>
     <next>
       <block type="controls_whileUntil" id="642" inline="false">
-        <field name="MODE">WHILE</field>
+        <field name="MODE">UNTIL</field>
+        <value name="NUMBER">
+          <block type="logic_compare" id="729" inline="true">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="variables_get" id="733">
+                <field name="VAR">bob</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="719">
+                <field name="NUM">500</field>
+              </block>
+            </value>
+          </block>
+        </value>
         <statement name="DO">
           <block type="movement_forward" id="20">
             <next>
