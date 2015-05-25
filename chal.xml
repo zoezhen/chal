@@ -1,7 +1,4 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="56" inline="true" x="282" y="13">
-    <field name="VAR">item</field>
-  </block>
   <block type="movement_forward" id="20" x="119" y="104">
     <next>
       <block type="robot_delay" id="164" inline="true">
@@ -15,15 +12,5 @@
         </next>
       </block>
     </next>
-  </block>
-  <block type="movement_right" id="30" x="384" y="140"></block>
-  <block type="logic_compare" id="71" inline="true" x="483" y="163">
-    <field name="OP">EQ</field>
-  </block>
-  <block type="controls_whileUntil" id="64" inline="false" x="240" y="278">
-    <field name="MODE">WHILE</field>
-  </block>
-  <block type="math_arithmetic" id="121" inline="true" x="462" y="313">
-    <field name="OP">ADD</field>
   </block>
 </xml>
