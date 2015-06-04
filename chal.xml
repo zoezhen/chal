@@ -1,62 +1,62 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="variables_set" id="574" inline="true" x="93" y="-99">
+  <block type="variables_set" id="1" inline="true" x="93" y="-99">
     <field name="VAR">bob</field>
     <value name="VALUE">
-      <block type="math_number" id="577">
+      <block type="math_number" id="2">
         <field name="NUM">4000</field>
       </block>
     </value>
     <next>
-      <block type="controls_whileUntil" id="642" inline="false">
+      <block type="controls_whileUntil" id="3" inline="false">
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
-          <block type="logic_compare" id="729" inline="true">
+          <block type="logic_compare" id="4" inline="true">
             <field name="OP">EQ</field>
             <value name="A">
-              <block type="variables_get" id="733">
+              <block type="variables_get" id="5">
                 <field name="VAR">bob</field>
               </block>
             </value>
             <value name="B">
-              <block type="math_number" id="719">
+              <block type="math_number" id="6">
                 <field name="NUM">500</field>
               </block>
             </value>
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_forward" id="20">
+          <block type="movement_forward" id="7">
             <next>
-              <block type="robot_delay" id="317" inline="true">
+              <block type="robot_delay" id="8" inline="true">
                 <value name="DELAY">
-                  <block type="variables_get" id="635">
+                  <block type="variables_get" id="9">
                     <field name="VAR">bob</field>
                   </block>
                 </value>
                 <next>
-                  <block type="variables_set" id="588" inline="true">
+                  <block type="variables_set" id="10" inline="true">
                     <field name="VAR">bob</field>
                     <value name="VALUE">
-                      <block type="math_arithmetic" id="607" inline="true">
+                      <block type="math_arithmetic" id="11" inline="true">
                         <field name="OP">MINUS</field>
                         <value name="A">
-                          <block type="variables_get" id="611">
+                          <block type="variables_get" id="12">
                             <field name="VAR">bob</field>
                           </block>
                         </value>
                         <value name="B">
-                          <block type="math_number" id="618">
+                          <block type="math_number" id="13">
                             <field name="NUM">200</field>
                           </block>
                         </value>
                       </block>
                     </value>
                     <next>
-                      <block type="movement_right" id="272">
+                      <block type="movement_right" id="14">
                         <next>
-                          <block type="robot_delay" id="682" inline="true">
+                          <block type="robot_delay" id="15" inline="true">
                             <value name="DELAY">
-                              <block type="math_number" id="702">
+                              <block type="math_number" id="16">
                                 <field name="NUM">1200</field>
                               </block>
                             </value>
